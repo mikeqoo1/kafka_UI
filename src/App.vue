@@ -21,11 +21,12 @@ export default {
   },
   methods: {
     getData() {
-      this.outputText = this.inputText
-      // let api = ""
-      // this.axios.get(api).then(res=>{
-      //   console.log(res)
-      // })
+      //this.outputText = this.inputText
+      let api = "http://127.0.0.1:8888/"
+      this.axios.get(api).then(res=>{
+        console.log(res)
+        this.outputText = res.data.message
+      })
     },
   },
 };

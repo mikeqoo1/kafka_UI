@@ -1,8 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-
 import axios from 'axios'
-import VueAxios from 'vue-axios'
+import vueaxios from 'vue-axios'
 
-createApp(App).use(VueAxios, axios)
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(vueaxios, axios)
+app.mount('#app')
+
