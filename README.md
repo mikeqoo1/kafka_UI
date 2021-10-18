@@ -1,6 +1,6 @@
-# web_order_UI
+# kafka_UI
 
-測試web ui實做用Vue3
+測試kafka 訂閱機制實做的ui Vue3
 
 ## 銘謝
 
